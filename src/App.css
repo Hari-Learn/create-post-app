@@ -1,0 +1,152 @@
+/* ====== GENERAL POST STYLES ====== */
+
+.post-item {
+  margin-bottom: 24px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+/* ====== POST HEADER (TEXT + TIME) ====== */
+
+.post-text {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.post-text > div {
+  display: flex;
+  justify-content: space-between; /* pushes date to right */
+  align-items: flex-start;
+  width: 100%;
+}
+
+.post-time {
+  font-size: 0.8em;
+  color: #666;
+  font-weight: normal;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/* ====== LIKE / DISLIKE SECTION ====== */
+
+.like-dislike {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.like-dislike img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* ====== COMMENT BOX ====== */
+
+.comment-box {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 600px;
+  margin-bottom: 8px;
+}
+
+.comment-box textarea {
+  flex: 1;
+  min-height: 50px;
+  max-height: 100px;
+  padding: 8px;
+  resize: vertical;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+/* ====== COMMENT LIST ====== */
+
+.comments-list {
+  margin-top: 8px;
+}
+
+.comments-list ul {
+  list-style-type: none; /* remove bullets */
+  padding-left: 0;
+  margin: 0;
+}
+
+/* ====== BUTTON ====== */
+
+.btn {
+  border-radius: 8px;
+  border: 1px solid #535bf2;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: sans-serif;
+  background-color: #147cec;
+  cursor: pointer;
+  color: #ffffff;
+  transition: border-color 0.25s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #0e63c3;
+}
+
+/* ====== POST FORM (TOP TEXTAREA + BUTTON) ====== */
+
+.spn {
+  display: flex;
+  align-items: flex-start; /* align textarea and button top */
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.spn textarea {
+  flex: 1;
+  min-height: 60px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 1em;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.post-message {
+  text-align: left; /* ensures message stays left */
+  flex: 1;           /* take remaining space */
+}
+
+.post-input {
+  flex: 1;           /* Take available space in flex container */
+  max-width: 600px;  /* Optional: limit max width */
+  min-height: 50px;
+  padding: 8px;
+  resize: vertical;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+.btn:disabled {
+  background-color: #ccc;   /* light gray */
+  border-color: #999;
+  cursor: not-allowed;
+  color: #666;
+}
+
