@@ -17,7 +17,7 @@ function App() {
   return (
     <>
     
-      <h1>Simple Post App</h1>
+      <h1>❤️🩷🧡💛💚💙 Simple Post App 💙💚💛🧡🩷❤️</h1>
       <PostForm toPostList={handlePostedItem}></PostForm>
       <PostList posts = {listPost}></PostList>
 
